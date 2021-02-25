@@ -1,50 +1,58 @@
 {
-	"category": "Hardware",
+	"category": "Sensor",
 	"name": "Thermistor",
 	"inputs": 1,
 	"outputs": 1,
 	"parameters": [
 		{
-			"name": "Pin ADC",
+			"name": "pinADC",
 			"type": "raw",
-			"default": "",
+			"default": "p20",
 			"options": [
 				""
 			],
-			"value": ""
+			"value": "p20"
 		},
 		{
-			"name": "Pull Up Resistance (Ohms)",
+			"name": "pullUpResistance",
 			"type": "raw",
-			"default": "10000.0",
-			"options": [],
-			"value": "10000.0"
+			"default": "10000",
+			"options": [
+				""
+			],
+			"value": "10000"
 		},
 		{
-			"name": "Thermistor Reference Resistance (Ohms)",
+			"name": "refResistance",
 			"type": "raw",
-			"default": "10000.0",
-			"options": [],
-			"value": "10000.0"
+			"default": "100000",
+			"options": [
+				""
+			],
+			"value": "100000"
 		},
 		{
-			"name": "Thermistor Reference Temperature (Celsius)",
+			"name": "refTemperature",
 			"type": "raw",
-			"default": "25.0",
-			"options": [],
-			"value": "25.0"
+			"default": "25",
+			"options": [
+				""
+			],
+			"value": "25"
 		},
 		{
-			"name": "Thermistor Beta",
+			"name": "beta",
 			"type": "raw",
-			"default": "4000.0",
-			"options": [],
-			"value": "4000.0"
+			"default": "4267",
+			"options": [
+				""
+			],
+			"value": "4267"
 		}
 	],
 	"labels": {
-		"input": ["Trigger"],
-		"output": ["Temperature"]
+		"input": [],
+		"output": []
 	},
 	"schematic_pins": {
 		"inputs": [
@@ -53,7 +61,5 @@
 		"outputs": [
 			2
 		]
-	},
-	"repository": "https://github.com/nblocksStudioNodes/nblocks_thermistor",
-	"revision": ""
+	}
 }
